@@ -28,9 +28,9 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
-  localDiskDb: {
-    adapter: 'sails-disk'
-  },
+  //localDiskDb: {
+  //  adapter: 'sails-disk'
+  //},
 
   /***************************************************************************
   *                                                                          *
@@ -43,9 +43,10 @@ module.exports.connections = {
    samappMySql: {
      adapter: 'sails-mysql',
      host: 'localhost',
+     port: 3306,
      user: 'ferjyanez', //optional
-     password: 'rycbar', //optional
-     database: 'samappMySql' //optional
+     password: 'Mimamamemima0', //optional
+     database: 'samapp' //optional
    },
 
   /***************************************************************************

@@ -7,28 +7,24 @@
 
 module.exports = {
 
-	tableName: 'Estudiante',
+  connection: 'samappMySql',
+  
+	tableName: 'estudiante',
 
   attributes: {
 
-	id: {
+/*	  id: {
   		type: 'integer',
   		primaryKey: true,
   		unique: true,
   		autoIncrement: true,
-  		columnName: idEstudiante
-  	}
-
-  	contrasena: {
-  		type: 'string',
-  		require: true,
-  		columnName: 'contrasenaEncriptada'
-  	}
-
+  		columnName: id
+  	},
+*/
   	carnet: {
   		type: 'integer',
   		require: true,
-  		columnName: 'Cedula'
+  		columnName: 'Carnet'
   	},
 
   	cedula: {
@@ -65,9 +61,9 @@ module.exports = {
   	},
 
   	nroCasa: {
-  		type: 'string',
+  		type: 'integer',
   		require: true,
-  		size: 5,
+  		size: 11,
   		columnName: 'NroCasa'
   	},
 
@@ -91,12 +87,19 @@ module.exports = {
   		columnName: 'Municipio'
   	},
 
+    contrasena: {
+      type: 'string',
+      require: true,
+      columnName: 'contrasenaEncriptada'
+    },
 
+    email: {
+      type: 'string',
+      require: true,
+      email: true,
+      columnName: 'email'
+    },
 
-
-
-
-
-  }
+  },
 };
 
