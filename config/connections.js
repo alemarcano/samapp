@@ -40,13 +40,13 @@ module.exports.connections = {
   * Run: npm install sails-mysql@for-sails-0.12 --save                       *
   *                                                                          *
   ***************************************************************************/
-   samappMySql: {
+  samappMySql: {
      adapter: 'sails-mysql',
-     host: 'localhost',
+     host: 'sql10.freemysqlhosting.net',
      port: 3306,
-     user: 'ferjyanez', //optional
-     password: 'Mimamamemima0', //optional
-     database: 'samapp' //optional
+     user: 'sql10219737',
+     password: 'yjcxFFxy7W',
+     database: `sql10219737`
    },
 
   /***************************************************************************

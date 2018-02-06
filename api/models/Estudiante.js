@@ -6,21 +6,20 @@
  */
 
 module.exports = {
-
   connection: 'samappMySql',
-  
-	tableName: 'estudiante',
+
+	tableName: 'Estudiante',
 
   attributes: {
 
-/*	  id: {
+	  id: {
   		type: 'integer',
   		primaryKey: true,
   		unique: true,
   		autoIncrement: true,
-  		columnName: id
+  		columnName: 'idEstudiante'
   	},
-*/
+
   	carnet: {
   		type: 'integer',
   		require: true,
@@ -37,27 +36,27 @@ module.exports = {
   		type: 'string',
   		size: 20,
   		required: true,
-  		columnName: 'PrimerNombre' 
+  		columnName: 'PrimerNombre'
   	},
 
   	segundoNombre: {
   		type: 'string',
   		size: 20,
-  		columnName: 'SegundoNombre' 
+  		columnName: 'SegundoNombre'
   	},
 
   	primerApellido: {
   		type: 'string',
   		size: 20,
   		required: true,
-  		columnName: 'PrimerApellido' 
+  		columnName: 'PrimerApellido'
   	},
 
   	segundoApellido: {
   		type: 'string',
   		size: 20,
   		required: true,
-  		columnName: 'SegundoApellido' 
+  		columnName: 'SegundoApellido'
   	},
 
   	nroCasa: {
